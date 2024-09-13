@@ -18,7 +18,7 @@ This project is a heart disease diagnostic chatbot built using a Keras-based dee
 
    ```bash
    git clone <repository_url>
-   cd uci_chatbot
+   cd  'Heart Disease Diagnostic Chatbot'
 
 
 
