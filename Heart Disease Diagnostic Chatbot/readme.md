@@ -22,14 +22,3 @@ This project is a heart disease diagnostic chatbot built using a Keras-based dee
 
 
 
-Heart Disease Diagnostic Chatbot/
-│
-├── AIserver/
-│   ├── flask.py
-│   ├── model.keras
-│   └── scaler.pkl
-│
-├── Chatbot/
-│   └── HDDC.py
-│
-└── README.md
