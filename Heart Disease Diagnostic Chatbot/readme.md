@@ -23,9 +23,9 @@ This project is a heart disease diagnostic chatbot built using a Keras-based dee
 Install Dependencies:
 
 It’s recommended to use a virtual environment. You can create one using venv or conda, and then install the required packages.
-
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+   ```bash
+  python -m venv venv
+  source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
 Install the required packages:
 
 
