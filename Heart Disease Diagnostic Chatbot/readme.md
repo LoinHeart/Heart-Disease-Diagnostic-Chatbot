@@ -93,7 +93,7 @@ Response: JSON object containing the predicted class and a message indicating th
 
 **`Notes`**
 
-  -Ensure that model.keras and scaler.pkl are located in the AIserver directory before starting the Flask server.
+  -Ensure that Test_Accuracy_84.52%.keras and scaler.pkl are located in the AIserver directory before starting the Flask server.
   
   -Adjust paths and configurations as needed based on your environment.
   
