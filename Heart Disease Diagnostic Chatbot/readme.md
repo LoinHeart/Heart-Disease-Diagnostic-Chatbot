@@ -79,7 +79,9 @@ Response: JSON object containing the predicted class and a message indicating th
   "ca": 0,
   "thal": 1
 }
+
 **Example Response:**
+
 
 {
   "predicted_class": 1,
@@ -96,7 +98,7 @@ flask==2.3.3
 joblib==1.3.2
 streamlit==1.22.0
 
-Instructions for Using requirements.txt
+**Instructions for Using requirements.txt**
 Create a Virtual Environment (if not already created):
 
 
