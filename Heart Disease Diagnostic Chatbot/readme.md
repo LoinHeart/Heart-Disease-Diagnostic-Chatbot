@@ -46,8 +46,8 @@ The server will start and listen for requests on http://127.0.0.1:5000.
 In a separate terminal, navigate to the Chatbot directory and start the Streamlit application.
 
 
-cd Chatbot
-streamlit run HDDC.py
+        cd Chatbot
+        streamlit run HDDC.py
 The Streamlit interface will be available at http://localhost:8501.
 
 **Usage**
@@ -64,50 +64,61 @@ Endpoint: /predict
 Method: POST
 Data: JSON object with the required features.
 Response: JSON object containing the predicted class and a message indicating the likelihood of heart disease.
-{
-  "age": 63,
-  "sex": 1,
-  "cp": 3,
-  "trestbps": 145,
-  "chol": 233,
-  "fbs": 1,
-  "restecg": 0,
-  "thalach": 150,
-  "exang": 0,
-  "oldpeak": 2.3,
-  "slope": 0,
-  "ca": 0,
-  "thal": 1
-}
+
+     
+        {
+          "age": 63,
+          "sex": 1,
+          "cp": 3,
+          "trestbps": 145,
+          "chol": 233,
+          "fbs": 1,
+          "restecg": 0,
+          "thalach": 150,
+          "exang": 0,
+          "oldpeak": 2.3,
+          "slope": 0,
+          "ca": 0,
+          "thal": 1
+        }
+ 
 
 **Example Response:**
 
 
-{
-  "predicted_class": 1,
-  "message": "You are likely to have heart disease."
-}
-`Notes`
+      {
+        "predicted_class": 1,
+        "message": "You are likely to have heart disease."
+      }
+
+**`Notes`**
+
   -Ensure that model.keras and scaler.pkl are located in the AIserver directory before starting the Flask server.
+  
   -Adjust paths and configurations as needed based on your environment.
-requirements.txt
+  
+**requirements.txt**
+
 Here is the requirements.txt file listing all necessary packages:
-tensorflow==2.13.0
-scikit-learn==1.3.0
-flask==2.3.3
-joblib==1.3.2
-streamlit==1.22.0
+   
+      tensorflow==2.13.0
+      scikit-learn==1.3.0
+      flask==2.3.3
+      joblib==1.3.2
+      streamlit==1.22.0
 
 **Instructions for Using requirements.txt**
+
 Create a Virtual Environment (if not already created):
 
+      ```bash
+      python -m venv venv
+      source venv/bin/activate  # On Windows, use `venv\Scripts\activate`'
+      
+**Install the Required Packages:**
 
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install the Required Packages:
-
-
-pip install -r requirements.txt
+        ```bash
+        pip install -r requirements.txt'
 This file ensures that all necessary dependencies for running the Heart Disease Diagnostic Chatbot are installed. Adjust package versions if needed based on your specific setup or compatibility requirements.
 
 
