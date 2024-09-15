@@ -124,3 +124,24 @@ This file ensures that all necessary dependencies for running the Heart Disease 
 
 
 You can save this content as `README.md` in your project directory.
+
+
+
+Dir Tree:
+
+      Heart Disease Diagnostic Chatbot/
+      │
+      ├── AI_server/
+      │   ├── __init__.py
+      |   ├── Backend.py
+      │   ├── Test_Accuracy_84.52%.keras
+      │   └── scaler.pkl
+      │
+      ├── Chatbot/
+      │   └── HDDC.py
+      ├── final_project.ipynb  
+      ├── __init__.py
+      ├── heart_disease_uci.csv
+      ├── requirement.txt
+      └── README.md
+
