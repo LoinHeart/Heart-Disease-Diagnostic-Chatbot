@@ -49,11 +49,15 @@ In a separate terminal, navigate to the Chatbot directory and start the Streamli
 cd Chatbot
 streamlit run HDDC.py
 The Streamlit interface will be available at http://localhost:8501.
+
 **Usage**
+
 **Interacting with the Streamlit Interface:**
+
 Open the Streamlit app in your web browser.
 Enter the required data (age, sex, chest pain type, etc.) into the provided fields.
 Click the "Predict" button to obtain the heart disease prediction.
+
 **Flask API Endpoint:**
 
 Endpoint: /predict
