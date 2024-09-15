@@ -32,12 +32,12 @@ It is recommended to use a virtual environment. You can create one using venv or
 
 pip install -r requirements.txt
 
-4. **Run the Flask Server:**
+4. **Run the AI API Server:**
 
 Navigate to the AIserver directory and start the Flask server.
 
 
-cd AIserver
+cd AI_server
 python flask.py
 The server will start and listen for requests on http://127.0.0.1:5000.
 
