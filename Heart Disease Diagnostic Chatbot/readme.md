@@ -28,14 +28,13 @@ It is recommended to use a virtual environment. You can create one using venv or
   source venv/bin/activate  # On Windows, use `venv\Scripts\activate`'
 3. **Install Dependencies:**
 
-bash
-Copy code
+
 pip install -r requirements.txt
 4. **Run the Flask Server:**
 
 Navigate to the AIserver directory and start the Flask server.
 
-bash
+
 cd AIserver
 python flask.py
 The server will start and listen for requests on http://127.0.0.1:5000.
@@ -44,8 +43,7 @@ The server will start and listen for requests on http://127.0.0.1:5000.
 
 In a separate terminal, navigate to the Chatbot directory and start the Streamlit application.
 
-bash
-Copy code
+
 cd Chatbot
 streamlit run HDDC.py
 The Streamlit interface will be available at http://localhost:8501.
@@ -104,7 +102,6 @@ Install the Required Packages:
 pip install -r requirements.txt
 This file ensures that all necessary dependencies for running the Heart Disease Diagnostic Chatbot are installed. Adjust package versions if needed based on your specific setup or compatibility requirements.
 
-javascript
-Copy code
+
 
 You can save this content as `README.md` in your project directory.
