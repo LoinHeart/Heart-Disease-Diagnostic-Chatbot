@@ -1,90 +1,21 @@
-Heart Disease Diagnostic Chatbot
+# Heart Disease Diagnostic Chatbot
+
 This project implements a heart disease diagnostic chatbot using a deep learning model built with Keras, Flask for the backend API, and Streamlit for the front-end interface. The goal is to predict the likelihood of heart disease based on user-provided input.
 
-Project Structure
-Chatbot/
+## Project Structure
 
-HDDC.py: Streamlit script providing a user interface for interacting with the heart disease prediction model.
-AIserver/
+- `Chatbot/`
+  - **`HDDC.py`**: Streamlit script providing a user interface for interacting with the heart disease prediction model.
 
-flask.py: Flask API server handling predictions. It processes data received from the Streamlit interface and returns prediction results.
-model.keras: Trained Keras model file used for making predictions.
-scaler.pkl: Scaler file for standardizing input features before making predictions.
-Installation
-Clone the Repository:
+- `AIserver/`
+  - **`flask.py`**: Flask API server handling predictions. It processes data received from the Streamlit interface and returns prediction results.
+  - **`model.keras`**: Trained Keras model file used for making predictions.
+  - **`scaler.pkl`**: Scaler file for standardizing input features before making predictions.
 
-bash
-Copy code
-git clone <repository_url>
-cd 'Heart Disease Diagnostic Chatbot'
-Set Up a Virtual Environment:
+## Installation
 
-It is recommended to use a virtual environment. You can create one using venv or conda, and then install the required packages.
+1. **Clone the Repository:**
 
-bash
-Copy code
-python -m venv venv
-source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-Install Dependencies:
-
-bash
-Copy code
-pip install -r requirements.txt
-Run the Flask Server:
-
-Navigate to the AIserver directory and start the Flask server.
-
-bash
-Copy code
-cd AIserver
-python flask.py
-The server will start and listen for requests on http://127.0.0.1:5000.
-
-Run the Streamlit Interface:
-
-In a separate terminal, navigate to the Chatbot directory and start the Streamlit application.
-
-bash
-Copy code
-cd Chatbot
-streamlit run HDDC.py
-The Streamlit interface will be available at http://localhost:8501.
-
-Usage
-Interacting with the Streamlit Interface:
-Open the Streamlit app in your web browser.
-Enter the required data (age, sex, chest pain type, etc.) into the provided fields.
-Click the "Predict" button to obtain the heart disease prediction.
-Flask API Endpoint:
-Endpoint: /predict
-Method: POST
-Data: JSON object with the required features.
-Response: JSON object containing the predicted class and a message indicating the likelihood of heart disease.
-Example Request:
-json
-Copy code
-{
-  "age": 63,
-  "sex": 1,
-  "cp": 3,
-  "trestbps": 145,
-  "chol": 233,
-  "fbs": 1,
-  "restecg": 0,
-  "thalach": 150,
-  "exang": 0,
-  "oldpeak": 2.3,
-  "slope": 0,
-  "ca": 0,
-  "thal": 1
-}
-Example Response:
-json
-Copy code
-{
-  "predicted_class": 1,
-  "message": "You are likely to have heart disease."
-}
-Notes
-Ensure that model.keras and scaler.pkl are located in the AIserver directory before starting the Flask server.
-Adjust paths and configurations as needed based on your environment.
+   ```bash
+   git clone <repository_url>
+   cd 'Heart Disease Diagnostic Chatbot'
