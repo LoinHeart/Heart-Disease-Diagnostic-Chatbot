@@ -31,6 +31,7 @@ It is recommended to use a virtual environment. You can create one using venv or
 
 
 pip install -r requirements.txt
+
 4. **Run the Flask Server:**
 
 Navigate to the AIserver directory and start the Flask server.
