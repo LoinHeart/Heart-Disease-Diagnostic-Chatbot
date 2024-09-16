@@ -106,7 +106,7 @@ Response: JSON object containing the predicted class and a message indicating th
 
 Here is the requirement.txt file listing all necessary packages:
    
-      tensorflow==2.13.0
+      tensorflow==2.16.1
       scikit-learn==1.3.0
       flask==2.3.3
       joblib==1.3.2
