@@ -18,7 +18,7 @@ This project implements a heart disease diagnostic chatbot using a deep learning
 
    ```bash
    git clone <repository_url>
-   cd 'Heart-Disease-Diagnostic-Chatbot'
+   cd 'Heart Disease Diagnostic Chatbot'
 2. **Set Up a Virtual Environment:**
 
 It is recommended to use a virtual environment. You can create one using venv or conda, and then install the required packages.
