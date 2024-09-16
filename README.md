@@ -30,15 +30,15 @@ It is recommended to use a virtual environment. You can create one using venv or
 3. **Install Dependencies:**
 
 
-pip install -r requirements.txt
+pip install -r requirement.txt
 
 4. **Run the AI API Server:**
 
-Navigate to the AIserver directory and start the Flask server.
+Navigate to the AI_server directory and start the Flask server.
 
 
 cd AI_server
-python flask.py
+python Backend.py
 The server will start and listen for requests on http://127.0.0.1:5000.
 
 5. **Run the Streamlit Interface:**
@@ -58,7 +58,7 @@ Open the Streamlit app in your web browser.
 Enter the required data (age, sex, chest pain type, etc.) into the provided fields.
 Click the "Predict" button to obtain the heart disease prediction.
 
-**Flask API Endpoint:**
+**Heart Disease Diagnostic Chatbot API Endpoint:**
 
 Endpoint: /predict
 Method: POST
@@ -99,7 +99,7 @@ Response: JSON object containing the predicted class and a message indicating th
   
 **requirements.txt**
 
-Here is the requirements.txt file listing all necessary packages:
+Here is the requirement.txt file listing all necessary packages:
    
       tensorflow==2.13.0
       scikit-learn==1.3.0
@@ -118,7 +118,7 @@ Create a Virtual Environment (if not already created):
 **Install the Required Packages:**
 
         ```bash
-        pip install -r requirements.txt'
+        pip install -r requirement.txt'
 This file ensures that all necessary dependencies for running the Heart Disease Diagnostic Chatbot are installed. Adjust package versions if needed based on your specific setup or compatibility requirements.
 
 
