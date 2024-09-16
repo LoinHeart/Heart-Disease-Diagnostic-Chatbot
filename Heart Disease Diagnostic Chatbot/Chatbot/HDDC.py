@@ -36,8 +36,8 @@ def main():
 
     # When user clicks 'Predict' button, send data to Flask API
     if st.button("Predict"):
-        # Send POST request to Flask API
-        url = 'http://127.0.0.1:5000/predict'  # Flask API URL
+        # Send POST request to AI_server API
+        url = 'http://127.0.0.1:5000/predict'  # AI_server API URL
         headers = {'Content-Type': 'application/json'}
         response = requests.post(url, data=json.dumps(user_input), headers=headers)
 
