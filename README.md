@@ -24,8 +24,8 @@ This project implements a heart disease diagnostic chatbot using a deep learning
 It is recommended to use a virtual environment. You can create one using venv or conda, and then install the required packages.
 
 
-  python -m venv venv
-          source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+          python -m venv venv source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+          
   
 3. **Install Dependencies:**
 
