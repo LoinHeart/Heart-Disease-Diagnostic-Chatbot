@@ -25,7 +25,7 @@ It is recommended to use a virtual environment. You can create one using venv or
 
 
   python -m venv venv
-  source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
+          source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
   
 3. **Install Dependencies:**
 
