@@ -6,10 +6,10 @@ import joblib
 app = Flask(__name__)
 
 # Load the saved Keras model and Scaler
-model = tf.keras.models.load_model(r'Test_Accuracy_84.52%.keras')
+model = tf.keras.models.load_model('Test_Accuracy_84.52%.keras')
 
 # Load the scaler (ensure it's in the same directory)
-with open(r'scaler.pkl', 'rb') as f:
+with open('scaler.pkl', 'rb') as f:
     scaler = joblib.load(f)
 
 @app.route('/predict', methods=['POST'])
