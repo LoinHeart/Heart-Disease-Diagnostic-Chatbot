@@ -1,7 +1,7 @@
 import pickle
 import numpy as np
 import tensorflow as tf
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify,redirect
 import joblib
 app = Flask(__name__)
 
@@ -11,6 +11,10 @@ model = tf.keras.models.load_model('Test_Accuracy_84.52%.keras')
 # Load the scaler (ensure it's in the same directory)
 with open('scaler.pkl', 'rb') as f:
     scaler = joblib.load(f)
+    
+@app.route('/')
+def home():
+    return redirect("http://localhost:8501")
 
 @app.route('/predict', methods=['POST'])
 def predict():
