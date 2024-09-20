@@ -35,7 +35,7 @@ It is recommended to use a virtual environment. You can create one using venv or
 3. **Install Dependencies:**
 
 
-pip install -r requirement.txt
+        pip install -r requirement.txt
 
 4. **Run the AI API Server:**
 
