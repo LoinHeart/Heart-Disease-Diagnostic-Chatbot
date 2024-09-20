@@ -150,3 +150,46 @@ Dir Tree:
       ├── requirement.txt
       └── README.md
 
+
+**interact with AI_server backend without using Streamlit**
+
+you can directly send HTTP requests (e.g., POST requests) to AI_server API endpoints using tools like Postman, cURL, or even custom scripts using Python's requests module.
+Example:
+1.Create a Python script (test_flask_api.py) to send data to AI_server API:
+
+        import requests
+        url = 'http://127.0.0.1:5000/predict'
+        data = {
+           "age": 63,
+           "sex": 1,
+           "cp": 3,
+           "trestbps": 145,
+           "chol": 233,
+           "fbs": 1,
+           "restecg": 0,
+           "thalach": 150,
+           "exang": 0,
+           "oldpeak": 2.3,
+           "slope": 0,
+           "ca": 0,
+           "thal": 1
+        }
+        
+        response = requests.post(url, json=data)
+        print(response.json())  # Output the API response
+2.Using cURL (Command-Line Tool)
+
+You can use cURL from the terminal to send HTTP requests.
+
+Steps:
+
+Open your terminal or command prompt.
+
+Use this command to send a POST request:
+
+        curl -X POST http://127.0.0.1:5000/predict \
+        -H "Content-Type: application/json" \
+        -d '{"age": 63, "sex": 1, "cp": 3, "trestbps": 145, "chol": 233, "fbs": 1, "restecg": 0, "thalach": 150, "exang": 0, "oldpeak": 2.3, "slope": 0, "ca": 0, "thal": 1}'
+
+The response from the AI_server API will be printed in the terminal.
+
