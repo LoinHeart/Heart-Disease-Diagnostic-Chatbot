@@ -27,7 +27,7 @@ It is recommended to use a virtual environment. You can create one using venv or
 
          python -m venv myenv #create the virtual environment
          myenv\Scripts\activate  #Activate the virtual environment using cmd
-        .\myenv\Scripts\Activate.ps1 #Activate the virtual environment using powershell
+        
 
 
           
