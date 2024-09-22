@@ -44,6 +44,7 @@ def main():
         if response.status_code == 200:
             prediction = response.json()
             st.write(f"Prediction: {prediction['message']}")
+            st.write(f"Probability of Heart Disease: {prediction['confidence']:.2%}")
         else:
             st.write("Error: Could not connect to AI Server.")
 
